@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://prueba-tecnica-u-javeriana.netlify.app

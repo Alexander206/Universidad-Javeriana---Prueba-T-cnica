@@ -45,9 +45,9 @@ El proyecto se ha iniciado las siguientres tecnologías:
 
 El proyecto se despliega automáticamente en Netlify desde la rama main, mientras que el desarrollo se lleva a cabo en la rama development.
 
-El repositorio del proyecto se encuentra en GitHub, puedes acceder a él a través del siguiente enlace: <a href="https://github.com/Alexander206/Portafolio">Repositorio en GitHub.</a>
+El repositorio del proyecto se encuentra en GitHub, puedes acceder a él a través del siguiente enlace: <a href="https://github.com/Alexander206/Universidad-Javeriana---Prueba-T-cnica">Repositorio en GitHub.</a>
 
-Además, el portafolio está desplegado y disponible en línea gracias a Netlify. Puedes visitarlo aquí: <a href="https://alexander-mg.netlify.app/">Portafolio desplegado en Netlify.</a>
+Además, el portafolio está desplegado y disponible en línea gracias a Netlify. Puedes visitarlo aquí: <a href="https://prueba-tecnica-u-javeriana.netlify.app">Portafolio desplegado en Netlify.</a>
 
 ## Estructura del Proyecto
 
