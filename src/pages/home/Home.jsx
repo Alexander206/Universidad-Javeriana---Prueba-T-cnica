@@ -73,8 +73,9 @@ const Home = () => {
                         </article>
 
                         <p>
-                            En la inscripción al proceso de admisión para los posgrados con inscripciones abierta. Válido durante el
-                            evento.*
+                            En la <span>inscripción al proceso de admisión</span> para los posgrados con inscripciones abierta. Válido
+                            durante el evento.*
+                            <br />
                             <a href="">*Aplican términos y condiciones.</a>
                         </p>
                     </article>
@@ -82,7 +83,7 @@ const Home = () => {
                     <article className="card_container">
                         <article className="card">
                             <h4>
-                                14
+                                15
                                 <span>OCT</span>
                             </h4>
                         </article>

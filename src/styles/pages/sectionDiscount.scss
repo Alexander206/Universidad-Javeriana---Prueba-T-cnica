@@ -36,10 +36,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                width: 28rem;
+                height: 14rem;
                 background-color: #0083ff;
                 border: none;
                 border-radius: 2.2rem;
-                padding: 2rem;
+                padding: 2.2rem 2rem;
 
                 h4 {
                     display: flex;
@@ -47,7 +50,7 @@
                     justify-content: center;
                     gap: 1rem;
 
-                    font-size: 13rem;
+                    font-size: 10rem;
                     font-family: "Gotham-Ultra";
                     color: var(--light);
                     line-height: 0.9;
@@ -56,6 +59,36 @@
                         font-family: "Gotham-Medium";
                         font-size: 5rem;
                         width: 9rem;
+                    }
+                }
+            }
+
+            p {
+                max-width: 30rem;
+                font-family: "Barlow-Medium";
+                font-size: 1.8rem;
+
+                span {
+                    font-family: "Barlow-Bold";
+                }
+
+                a {
+                    color: #0083ff;
+                }
+            }
+
+            &:last-of-type {
+                flex-direction: row-reverse;
+
+                .card h4 {
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0;
+
+                    span {
+                        transform: rotate(-90deg);
+                        font-size: 3.5rem;
+                        height: 3.5rem;
                     }
                 }
             }
