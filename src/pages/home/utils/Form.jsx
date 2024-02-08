@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import ImputForm from "./ImputForm";
 
 const Form = ({ dataForm }) => {
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        navigate("/registrations");
+    };
+
     const htmlDoc = dataForm.map((item, index) => {
         return (
             <ImputForm
@@ -17,7 +25,7 @@ const Form = ({ dataForm }) => {
     });
 
     return (
-        <form className="form">
+        <form className="form" method="POST" onSubmit={handleSubmit}>
             {htmlDoc}
 
             <button type="submit">Enviar</button>

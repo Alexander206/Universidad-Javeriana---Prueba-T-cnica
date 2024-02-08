@@ -1,7 +1,7 @@
-import blog1 from "../../../../assets/images/home/blog1.jpg";
-import blog2 from "../../../../assets/images/home/blog2.jpg";
-import blog3 from "../../../../assets/images/home/blog3.jpg";
-import blog4 from "../../../../assets/images/home/blog4.jpg";
+import blog1 from "../../../assets/images/home/blog1.jpg";
+import blog2 from "../../../assets/images/home/blog2.jpg";
+import blog3 from "../../../assets/images/home/blog3.jpg";
+import blog4 from "../../../assets/images/home/blog4.jpg";
 
 export const dataBlogs = [
     {

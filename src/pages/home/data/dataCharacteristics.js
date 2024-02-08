@@ -1,9 +1,9 @@
-import characteristics1 from "../../../../assets/images/home/characteristics1.svg";
-import characteristics2 from "../../../../assets/images/home/characteristics2.svg";
-import characteristics3 from "../../../../assets/images/home/characteristics3.svg";
-import characteristics4 from "../../../../assets/images/home/characteristics4.svg";
-import characteristics5 from "../../../../assets/images/home/characteristics5.svg";
-import characteristics6 from "../../../../assets/images/home/characteristics6.svg";
+import characteristics1 from "../../../assets/images/home/characteristics1.svg";
+import characteristics2 from "../../../assets/images/home/characteristics2.svg";
+import characteristics3 from "../../../assets/images/home/characteristics3.svg";
+import characteristics4 from "../../../assets/images/home/characteristics4.svg";
+import characteristics5 from "../../../assets/images/home/characteristics5.svg";
+import characteristics6 from "../../../assets/images/home/characteristics6.svg";
 
 export const dataCharacteristics = [
     {

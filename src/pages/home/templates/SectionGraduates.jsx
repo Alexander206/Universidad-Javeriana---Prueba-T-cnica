@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const SectionGraduates = ({ background, title, caption, imgSrc, text }) => {
+const SectionGraduates = ({ background, title, caption, imgSrc, text, mailtoText, mail }) => {
     return (
         <>
             <section className="section_graduates" style={{ backgroundImage: `url(${background})` }}>
@@ -16,8 +16,7 @@ const SectionGraduates = ({ background, title, caption, imgSrc, text }) => {
 
             <section className="mailto">
                 <p>
-                    Si quieres información adicional de este evento podrás solicitarla a través del correo electrónico{" "}
-                    <a href="mailto:expojaverianapos@javeriana.edu.co">expojaverianapos@javeriana.edu.co</a>
+                    {mailtoText} <a href={`mailto:${mail}`}>{mail}</a>
                 </p>
             </section>
         </>
@@ -30,6 +29,8 @@ SectionGraduates.propTypes = {
     caption: PropTypes.string.isRequired,
     imgSrc: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    mailtoText: PropTypes.string.isRequired,
+    mail: PropTypes.string.isRequired,
 };
 
 export default SectionGraduates;

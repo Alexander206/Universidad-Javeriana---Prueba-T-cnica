@@ -1,6 +1,6 @@
-import guest1 from "../../../../assets/images/home/guest1.jpg";
-import guest2 from "../../../../assets/images/home/guest2.jpg";
-import guest3 from "../../../../assets/images/home/guest3.jpg";
+import guest1 from "../../../assets/images/home/guest1.jpg";
+import guest2 from "../../../assets/images/home/guest2.jpg";
+import guest3 from "../../../assets/images/home/guest3.jpg";
 
 export const dataGuests = [
     {

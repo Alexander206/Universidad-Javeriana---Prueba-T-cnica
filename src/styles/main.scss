@@ -3,9 +3,11 @@
 
 /* Global components */
 @import "./components/header.scss";
+@import "./components/footer.scss";
 
 /* Pages */
 @import "./pages/home/home.scss";
+@import "./pages/registrations/registrations.scss";
 
 /* General */
 @include global;
@@ -36,9 +38,11 @@ html {
 
             /* Components */
             @include header;
+            @include footer;
 
             /* Pages */
             @include home;
+            @include registrations;
         }
     }
 }
