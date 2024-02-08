@@ -1,9 +1,11 @@
 @import "./vars";
 @import "./global.scss";
 
+/* Global components */
 @import "./components/header.scss";
 
-@import "./pages/home.scss";
+/* Pages */
+@import "./pages/home/home.scss";
 
 /* General */
 @include global;

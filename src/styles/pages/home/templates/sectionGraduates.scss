@@ -1,0 +1,115 @@
+@mixin section-graduates {
+    .mailto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #1c3180;
+        width: 100%;
+        padding: 5rem 2rem;
+
+        p {
+            text-align: center;
+            max-width: 85rem;
+            color: var(--light);
+            font-size: 2.8rem;
+            font-family: "Barlow-Medium";
+
+            a {
+                color: var(--light);
+                font-family: "Barlow-Bold";
+            }
+        }
+    }
+
+    .section_graduates {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 7rem 2rem;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 30, 30, 0.432);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(0px);
+            z-index: -1;
+        }
+
+        .header_graduates {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 2rem;
+
+            h2 {
+                text-align: right;
+                font-family: "Barlow-Medium";
+                font-size: 5rem;
+                max-width: 25rem;
+                color: var(--light);
+
+                span {
+                    color: #e9c330;
+                    font-family: "Barlow-Bold";
+                }
+            }
+
+            p {
+                position: relative;
+                top: -0.8rem;
+                font-family: "Barlow-Medium";
+                font-size: 2.4rem;
+                max-width: 11.9em;
+                color: var(--light);
+
+                span {
+                    font-family: "Barlow-Bold";
+                }
+            }
+        }
+
+        img {
+            width: 8rem;
+        }
+
+        p {
+            position: relative;
+            top: -0.8rem;
+            text-align: center;
+            font-family: "Barlow-Medium";
+            font-size: 2.4rem;
+            max-width: 60rem;
+            color: var(--light);
+
+            span {
+                font-family: "Barlow-Bold";
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .section_graduates .header_graduates {
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

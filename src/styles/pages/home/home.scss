@@ -1,0 +1,17 @@
+@import "./templates/sectionForm.scss";
+@import "./templates/sectionDiscount.scss";
+@import "./templates/sectionCharacteristics.scss";
+@import "./templates/sectionGuests.scss";
+@import "./templates/sectionCampus.scss";
+@import "./templates/sectionBlogs.scss";
+@import "./templates/sectionGraduates.scss";
+
+@mixin home {
+    @include section-form;
+    @include section-discount;
+    @include section-characteristics;
+    @include section-guests;
+    @include section-campus;
+    @include section-blogs;
+    @include section-graduates;
+}
