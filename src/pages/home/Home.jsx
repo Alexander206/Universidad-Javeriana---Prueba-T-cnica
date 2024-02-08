@@ -1,9 +1,15 @@
 import Header from "../../components/Header";
 
+import Form from "./components/Form.jsx";
+
 import background from "../../assets/images/home/bg.jpg";
 import people from "../../assets/images/home/people.png";
-
-import Form from "./components/Form.jsx";
+import characteristics1 from "../../assets/images/home/characteristics1.svg";
+import characteristics2 from "../../assets/images/home/characteristics2.svg";
+import characteristics3 from "../../assets/images/home/characteristics3.svg";
+import characteristics4 from "../../assets/images/home/characteristics4.svg";
+import characteristics5 from "../../assets/images/home/characteristics5.svg";
+import characteristics6 from "../../assets/images/home/characteristics6.svg";
 
 const Home = () => {
     return (
@@ -91,6 +97,50 @@ const Home = () => {
                         <p>
                             Paga tu matrícula antes del 15 de octubre con precio del 2021.
                             <a href="">*Aplican términos y condiciones.</a>
+                        </p>
+                    </article>
+                </section>
+
+                <section className="section_characteristics">
+                    <article className="target">
+                        <img src={characteristics1} alt="logo de caracteristicas"></img>
+                        <p>
+                            <span>7 Centros de Experiencia</span> por áreas de conocimiento.
+                        </p>
+                    </article>
+
+                    <article className="target">
+                        <img src={characteristics2} alt="logo de caracteristicas"></img>
+                        <p>
+                            Charlas de <span>financiación y becas.</span>
+                        </p>
+                    </article>
+
+                    <article className="target">
+                        <img src={characteristics3} alt="logo de caracteristicas"></img>
+                        <p>
+                            Stand de <span>inscripciones.</span>
+                        </p>
+                    </article>
+
+                    <article className="target">
+                        <img src={characteristics4} alt="logo de caracteristicas"></img>
+                        <p>
+                            Actividades de buen vivir y <span>bienestar.</span>
+                        </p>
+                    </article>
+
+                    <article className="target">
+                        <img src={characteristics5} alt="logo de caracteristicas"></img>
+                        <p>
+                            Charlas de <span>áreas de conocimiento.</span>
+                        </p>
+                    </article>
+
+                    <article className="target">
+                        <img src={characteristics6} alt="logo de caracteristicas"></img>
+                        <p>
+                            <span>Recorridos 360°</span> por el campus y más.
                         </p>
                     </article>
                 </section>

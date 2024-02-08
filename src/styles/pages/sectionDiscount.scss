@@ -94,4 +94,18 @@
             }
         }
     }
+
+    @media (max-width: 700px) {
+        .section_discount .card_container {
+            flex-direction: column;
+
+            p {
+                text-align: center;
+            }
+
+            &:last-of-type {
+                flex-direction: column;
+            }
+        }
+    }
 }

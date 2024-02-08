@@ -1,7 +1,9 @@
 @import "./sectionForm.scss";
 @import "./sectionDiscount.scss";
+@import "./sectionCharacteristics.scss";
 
 @mixin home {
     @include section-form;
     @include section-discount;
+    @include section-characteristics;
 }
