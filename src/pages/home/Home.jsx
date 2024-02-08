@@ -10,6 +10,10 @@ import characteristics3 from "../../assets/images/home/characteristics3.svg";
 import characteristics4 from "../../assets/images/home/characteristics4.svg";
 import characteristics5 from "../../assets/images/home/characteristics5.svg";
 import characteristics6 from "../../assets/images/home/characteristics6.svg";
+import guest1 from "../../assets/images/home/guest1.jpg";
+import guest2 from "../../assets/images/home/guest2.jpg";
+import guest3 from "../../assets/images/home/guest3.jpg";
+import arrow from "../../assets/images/home/arrow.svg";
 
 const Home = () => {
     return (
@@ -142,6 +146,56 @@ const Home = () => {
                         <p>
                             <span>Recorridos 360°</span> por el campus y más.
                         </p>
+                    </article>
+                </section>
+
+                <section className="section_guests">
+                    <h2 className="title">INVITADOS ESPECIALES</h2>
+
+                    <article className="container_guest">
+                        <article className="guest">
+                            <figure>
+                                <img src={guest1} alt="foto del invitado"></img>
+                            </figure>
+                            <h4>Invitado 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                        </article>
+
+                        <article className="guest">
+                            <figure>
+                                <img src={guest2} alt="foto del invitado"></img>
+                            </figure>
+                            <h4>Invitado 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                        </article>
+
+                        <article className="guest">
+                            <figure>
+                                <img src={guest3} alt="foto del invitado"></img>
+                            </figure>
+                            <h4>Invitado 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                        </article>
+                    </article>
+                </section>
+
+                <section className="section_campus">
+                    <article className="text">
+                        <img src={arrow} alt="flechas"></img>
+
+                        <h4>
+                            Conoce el <span>Campus de nuestra Universidad</span>
+                        </h4>
+                    </article>
+
+                    <article className="video">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/v0v7E77mUTA?si=-8dWAcHytuzxy8nz"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        ></iframe>
                     </article>
                 </section>
             </main>
