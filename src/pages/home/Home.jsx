@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import background from "../../assets/images/home/bg.jpg";
 import people from "../../assets/images/home/people.png";
 
-import Form from "./components/form";
+import Form from "./components/Form.jsx";
 
 const Home = () => {
     return (
@@ -56,6 +56,41 @@ const Home = () => {
                                 </div>
                             </article>
                         </div>
+                    </article>
+                </section>
+
+                <section className="section_discount">
+                    <h2 className="title">
+                        Esperamos disfruten de esta <span>experiencia virtual</span> que contará con:
+                    </h2>
+
+                    <article className="card_container">
+                        <article className="card">
+                            <h4>
+                                50
+                                <span>% dto</span>
+                            </h4>
+                        </article>
+
+                        <p>
+                            En la inscripción al proceso de admisión para los posgrados con inscripciones abierta. Válido durante el
+                            evento.*
+                            <a href="">*Aplican términos y condiciones.</a>
+                        </p>
+                    </article>
+
+                    <article className="card_container">
+                        <article className="card">
+                            <h4>
+                                14
+                                <span>OCT</span>
+                            </h4>
+                        </article>
+
+                        <p>
+                            Paga tu matrícula antes del 15 de octubre con precio del 2021.
+                            <a href="">*Aplican términos y condiciones.</a>
+                        </p>
                     </article>
                 </section>
             </main>
