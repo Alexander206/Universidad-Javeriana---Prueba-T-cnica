@@ -7,11 +7,23 @@
 @import "./templates/sectionGraduates.scss";
 
 @mixin home {
-    @include section-form;
-    @include section-discount;
-    @include section-characteristics;
-    @include section-guests;
-    @include section-campus;
-    @include section-blogs;
-    @include section-graduates;
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light);
+        width: 100%;
+        overflow: hidden;
+
+        padding-top: 8rem;
+
+        @include section-form;
+        @include section-discount;
+        @include section-characteristics;
+        @include section-guests;
+        @include section-campus;
+        @include section-blogs;
+        @include section-graduates;
+    }
 }

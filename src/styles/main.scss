@@ -4,6 +4,7 @@
 /* Global components */
 @import "./components/header.scss";
 @import "./components/footer.scss";
+@import "./components/footer2.scss";
 
 /* Pages */
 @import "./pages/home/home.scss";
@@ -34,11 +35,11 @@ html {
             width: 100%;
 
             border-radius: 1rem;
-            padding-top: 8rem;
 
             /* Components */
             @include header;
             @include footer;
+            @include footer2;
 
             /* Pages */
             @include home;

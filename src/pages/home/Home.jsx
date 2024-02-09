@@ -1,6 +1,6 @@
 // Components
 import Header from "../../components/Header.jsx";
-import Footer from "../../components/footer.jsx";
+import Footer from "../../components/Footer.jsx";
 
 import SectionForm from "./templates/SectionForm.jsx";
 import SectionDiscount from "./templates/SectionDiscount.jsx";
@@ -27,7 +27,7 @@ const Home = () => {
         <>
             <Header />
 
-            <main className="inscription">
+            <main className="home">
                 <SectionForm
                     background={background}
                     title={["EXPO", "JAVERIANA", "POSGRADOS"]}

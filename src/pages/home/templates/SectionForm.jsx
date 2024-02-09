@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Form from "../utils/Form";
 
 const SectionForm = ({ background, title, caption, date, imgPeople, titleForm, dataForm }) => {
-    const dateBig = date.dateBig.split();
+    const dateBig = date.dateBig.split("");
 
     return (
         <section className="section_form">
