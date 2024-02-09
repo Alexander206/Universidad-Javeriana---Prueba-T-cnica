@@ -1,20 +1,10 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import CardBlogs from "../../../components/CardBlogs";
 
 const SectionBlogs = ({ caption, title, text, dataBlogs }) => {
     const BlogsElement = dataBlogs.map((item, index) => {
-        return (
-            <article key={index} className="card_blog">
-                <figure style={{ backgroundImage: `url(${item.backgroundImage})` }}>
-                    <Link to="/blog">Ver más</Link>
-                </figure>
-
-                <div>
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
-                </div>
-            </article>
-        );
+        return <CardBlogs key={index} background={item.backgroundImage} id={item.id} title={item.title} description={item.description} />;
     });
 
     return (

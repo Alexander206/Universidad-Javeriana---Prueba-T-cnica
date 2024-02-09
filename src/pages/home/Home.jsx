@@ -20,12 +20,12 @@ import stitching from "../../assets/images/home/stitching.svg";
 import { dataForm } from "./data/dataForm.js";
 import { dataCharacteristics } from "./data/dataCharacteristics.js";
 import { dataGuests } from "./data/dataGuests.js";
-import { dataBlogs } from "./data/dataBlogs.js";
+import { dataBlogs } from "../../components/data/dataBlogs.js";
 
 const Home = () => {
     return (
         <>
-            <Header />
+            <Header identifier="Posgrados" />
 
             <main className="home">
                 <SectionForm

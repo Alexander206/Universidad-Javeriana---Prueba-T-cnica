@@ -1,18 +1,24 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/full_logo.png";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ identifier }) => {
     return (
         <header className="header">
-            <figure className="logo">
+            <a href="/" className="logo">
                 <img src={logo} alt="logo"></img>
-                <h2>Posgrados</h2>
-            </figure>
+                <h2>{identifier}</h2>
+            </a>
 
-            <button className="btn btn_header">Inscríbete aquí</button>
+            <Link to="/" className="btn btn_header">
+                Inscríbete aquí
+            </Link>
         </header>
     );
 };
 
-Header.propTypes = {};
+Header.propTypes = {
+    identifier: PropTypes.string.isRequired,
+};
 
 export default Header;

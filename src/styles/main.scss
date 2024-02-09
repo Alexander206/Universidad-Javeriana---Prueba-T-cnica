@@ -5,10 +5,12 @@
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/footer2.scss";
+@import "./components/footer3.scss";
 
 /* Pages */
 @import "./pages/home/home.scss";
 @import "./pages/registrations/registrations.scss";
+@import "./pages/blog/blog.scss";
 
 /* General */
 @include global;
@@ -35,15 +37,18 @@ html {
             width: 100%;
 
             border-radius: 1rem;
+            overflow: hidden;
 
             /* Components */
             @include header;
             @include footer;
             @include footer2;
+            @include footer3;
 
             /* Pages */
             @include home;
             @include registrations;
+            @include blog;
         }
     }
 }

@@ -1,0 +1,66 @@
+@import "../../../components/CardBlogs.scss";
+
+@mixin blogs {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        width: 100%;
+        max-width: 102rem;
+
+        .separator {
+            width: 7rem;
+            height: 0.6rem;
+            background-color: #e8c230;
+            margin-top: 2rem;
+        }
+
+        .title {
+            font-family: "Gotham-Bold";
+            font-size: 3.2rem;
+            color: #666666;
+            max-width: 60rem;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .container_blogs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            width: 100%;
+
+            @include card-blogs;
+
+            .card_blog {
+                max-width: 24rem;
+                border-radius: 2rem 0 2rem 2rem;
+
+                figure {
+                    height: 22rem;
+
+                    a {
+                        padding: 0.5rem 2rem;
+                        font-size: 1.4rem;
+                    }
+                }
+
+                div p {
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .blogs .title {
+            font-size: 3rem;
+        }
+    }
+}
