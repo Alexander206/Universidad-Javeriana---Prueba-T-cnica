@@ -43,9 +43,16 @@
         }
 
         .video {
-            iframe {
-                max-width: 50rem;
-                max-height: 28rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 55rem;
+            border-radius: 1rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
             }
         }
     }

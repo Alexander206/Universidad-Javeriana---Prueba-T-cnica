@@ -10,13 +10,7 @@ const SectionCampus = ({ arrow, text, urlVideo }) => {
             </article>
 
             <article className="video">
-                <iframe
-                    width="560"
-                    height="315"
-                    src={urlVideo}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
+                <img src={urlVideo} alt="" />
             </article>
         </section>
     );

@@ -17,6 +17,7 @@ import background from "../assets/pages/home/bg.jpg";
 import people from "../assets/pages/home/people.webp";
 import arrow from "../assets/pages/home/arrow.svg";
 import stitching from "../assets/pages/home/stitching.svg";
+import imgVideo from "../assets/pages/home/campus.webp";
 
 // Data
 import { dataForm } from "../_data/dataForm.js";
@@ -70,11 +71,7 @@ const Home = () => {
 
                 <SectionGuests title="INVITADOS ESPECIALES" dataGuests={dataGuests} />
 
-                <SectionCampus
-                    arrow={arrow}
-                    text="Conoce el <span>Campus de nuestra Universidad</span>"
-                    urlVideo="https://www.youtube.com/embed/v0v7E77mUTA?si=-8dWAcHytuzxy8nz"
-                />
+                <SectionCampus arrow={arrow} text="Conoce el <span>Campus de nuestra Universidad</span>" urlVideo={imgVideo} />
 
                 <SectionBlogs
                     caption="Encuentra aquí los"
