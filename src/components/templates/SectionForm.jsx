@@ -1,12 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Form from "../utils/Form";
 
-const SectionForm = ({ background, title, caption, date, imgPeople, titleForm, dataForm, form, setForm }) => {
+const SectionForm = ({ background, title, caption, date, imgPeople, titleForm, dataForm, form, setForm, setFormRef }) => {
+    const componentRef = useRef(null);
+
+    setFormRef(componentRef);
+
     useEffect(() => {
         setTimeout(() => {
             setForm(false);
-        }, 2000);
+        }, 1000);
     }, [form, setForm]);
 
     const dateBig = date.dateBig.split("");
@@ -53,11 +57,11 @@ const SectionForm = ({ background, title, caption, date, imgPeople, titleForm, d
                         </figure>
                     </article>
 
-                    <article className="container_form">
+                    <article ref={componentRef} className="container_form">
                         <div className={`contain ${form}`}>
                             <h3 className="title">{titleForm}</h3>
 
-                            <Form dataForm={dataForm} form={form} setForm={setForm} />
+                            <Form dataForm={dataForm} />
                         </div>
                     </article>
                 </div>
@@ -76,6 +80,7 @@ SectionForm.propTypes = {
     dataForm: PropTypes.array.isRequired,
     form: PropTypes.bool,
     setForm: PropTypes.func,
+    setFormRef: PropTypes.func,
 };
 
 export default SectionForm;

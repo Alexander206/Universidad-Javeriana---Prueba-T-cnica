@@ -2,9 +2,15 @@ import { Link } from "react-router-dom";
 import logo from "../assets/full_logo.webp";
 import PropTypes from "prop-types";
 
-const Header = ({ identifier, setForm }) => {
+const Header = ({ identifier, setForm, formRef }) => {
     const handlerForm = () => {
-        window.scrollTo(0, 0);
+        console.log(formRef);
+
+        window.scrollTo({
+            top: formRef.current.offsetTop,
+            behavior: "smooth",
+        });
+
         setForm(true);
     };
 
@@ -29,6 +35,7 @@ const Header = ({ identifier, setForm }) => {
 Header.propTypes = {
     identifier: PropTypes.string.isRequired,
     setForm: PropTypes.func,
+    formRef: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({ current: PropTypes.instanceOf(Element) })]),
 };
 
 export default Header;

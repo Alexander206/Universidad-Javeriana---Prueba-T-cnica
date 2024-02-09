@@ -202,9 +202,20 @@
             .blog_contain {
                 flex-direction: column;
                 padding-bottom: 4rem;
+                padding-top: 1rem;
 
                 article {
                     width: 100%;
+
+                    h2 {
+                        left: 2rem;
+                        font-size: 3.2rem;
+
+                        img {
+                            left: -2rem;
+                            width: 6rem;
+                        }
+                    }
                 }
             }
 
@@ -212,6 +223,7 @@
                 flex-direction: column-reverse;
 
                 .related_blogs {
+                    flex-direction: column;
                     justify-content: space-around;
                     width: 100%;
                 }

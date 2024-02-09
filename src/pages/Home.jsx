@@ -27,10 +27,11 @@ import { dataBlogs } from "../_data/dataBlogs.js";
 
 const Home = () => {
     const [form, setForm] = useState(false);
+    const [formRef, setFormRef] = useState();
 
     return (
         <>
-            <Header identifier="Posgrados" setForm={setForm} />
+            <Header identifier="Posgrados" setForm={setForm} formRef={formRef} />
 
             <main className="home">
                 <SectionForm
@@ -48,6 +49,7 @@ const Home = () => {
                     dataForm={dataForm}
                     form={form}
                     setForm={setForm}
+                    setFormRef={setFormRef}
                 />
 
                 <SectionDiscount
