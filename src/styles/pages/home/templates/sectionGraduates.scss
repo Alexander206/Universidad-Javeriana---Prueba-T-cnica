@@ -70,6 +70,7 @@
             }
 
             p {
+                text-align: left;
                 position: relative;
                 top: -0.8rem;
                 font-family: "Barlow-Medium";
@@ -108,6 +109,10 @@
             align-items: center;
 
             h2 {
+                text-align: center;
+            }
+
+            p {
                 text-align: center;
             }
         }
