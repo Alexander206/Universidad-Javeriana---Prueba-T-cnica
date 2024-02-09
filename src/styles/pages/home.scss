@@ -1,0 +1,29 @@
+@import "../components/templates/sectionForm.scss";
+@import "../components/templates/sectionDiscount.scss";
+@import "../components/templates/sectionCharacteristics.scss";
+@import "../components/templates/sectionGuests.scss";
+@import "../components/templates/sectionCampus.scss";
+@import "../components/templates/sectionBlogs.scss";
+@import "../components/templates/sectionGraduates.scss";
+
+@mixin home {
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light);
+        width: 100%;
+        overflow: hidden;
+
+        padding-top: 8rem;
+
+        @include section-form;
+        @include section-discount;
+        @include section-characteristics;
+        @include section-guests;
+        @include section-campus;
+        @include section-blogs;
+        @include section-graduates;
+    }
+}

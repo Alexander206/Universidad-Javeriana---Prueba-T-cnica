@@ -129,13 +129,14 @@
 
         /* * Scroll personalizado */
         body::-webkit-scrollbar {
-            width: 7px;
+            width: 10px;
+            background-color: var(--darkPrimary);
         }
 
         body::-webkit-scrollbar-thumb {
-            background-color: var(--darkPrimary);
+            background-color: #0066c8;
             border-radius: 5px;
-            height: 40%;
+            height: 35%;
         }
     }
 }

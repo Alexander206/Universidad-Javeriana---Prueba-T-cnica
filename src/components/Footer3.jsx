@@ -1,5 +1,5 @@
 import logo from "../assets/icons/logo_footer3.svg";
-import { dataFooter3 } from "./data/dataFooter";
+import { dataFooter3 } from "../_data/dataFooter.js";
 
 const Footer3 = () => {
     const aboutElements = dataFooter3.about.map((item, index) => {

@@ -52,3 +52,12 @@ Además, el portafolio está desplegado y disponible en línea gracias a Netlify
 ## Estructura del Proyecto
 
 La estructura del proyecto está basada en la arquitectura hexagonal, siguiendo el principio de diseño `"desktop-first"` y utilizando `"Atomic Design"` para la organización de los componentes.
+
+# Novedades y Adiciones
+
+## Animaciones y Mejoras Visuales
+
+-   `Botón de Registro Animado:` Se añadió una animación al botón del encabezado "Regístrate aquí", que ahora anima el formulario (form) al hacer clic en él.
+-   `Animaciones de Tarjetas de Características:` Se implementó una pequeña animación en las tarjetas de características, que se activa al hacer hover sobre ellas, mejorando la experiencia visual del usuario.
+-   `Contenido Dinámico para Blogs:` Se desarrollaron los blogs con información dinámica, lo que facilita la gestión y creación de contenido en la base de datos. Esto permite construir fácilmente la cantidad de blogs que haya en la base de datos sin necesidad de modificar manualmente el código.
+-   `Sección de Blog con Manejo de Rutas:` Se agregó una sección de blog con el uso de rutas dinámicas. Cada blog corresponde a una ruta diferente, lo que permite una fácil referencia y - - `Optimización para Motores de Búsqueda (SEO):` Se realizaron configuraciones de SEO para mejorar la visibilidad del sitio web en los motores de búsqueda.

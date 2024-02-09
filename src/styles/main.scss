@@ -8,9 +8,9 @@
 @import "./components/footer3.scss";
 
 /* Pages */
-@import "./pages/home/home.scss";
-@import "./pages/registrations/registrations.scss";
-@import "./pages/blog/blog.scss";
+@import "./pages/home.scss";
+@import "./pages/registrations.scss";
+@import "./pages/blog.scss";
 
 /* General */
 @include global;

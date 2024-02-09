@@ -1,4 +1,4 @@
-import { dataFooter } from "./data/dataFooter";
+import { dataFooter } from "../_data/dataFooter";
 import logo from "../assets/icons/logoFull.svg";
 
 const Footer = () => {

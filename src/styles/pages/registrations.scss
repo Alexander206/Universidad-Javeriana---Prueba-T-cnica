@@ -1,0 +1,17 @@
+@import "./../components/templates/successful.scss";
+@import "./../components/templates/advisory.scss";
+
+@mixin registrations {
+    .registrations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light);
+        width: 100%;
+        overflow: hidden;
+
+        @include successful;
+        @include advisory;
+    }
+}

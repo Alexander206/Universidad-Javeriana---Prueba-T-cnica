@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Componentes
-import Home from "../pages/home/Home.jsx";
-import Registrations from "../pages/registrations/Registrations.jsx";
-import Blog from "../pages/blog/Blog.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
+
+import Home from "../pages/Home.jsx";
+import Registrations from "../pages/Registrations.jsx";
+import Blog from "../pages/Blog.jsx";
 import NotFound from "../pages/NotFound.jsx";
 
 function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/blog/" element={<Blog />}>
